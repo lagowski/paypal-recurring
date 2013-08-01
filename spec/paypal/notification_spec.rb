@@ -6,6 +6,11 @@ describe PayPal::Recurring::Notification do
     subject.should be_express_checkout
   end
 
+  it "detects the payer id" do
+    subject.params[:payer_id] = "6KAQNBYBZ6KAC"
+    subject.payer_id.should == "6KAQNBYBZ6KAC"
+  end
+
   it "detects recurring payment" do
     subject.params[:txn_type] = "recurring_payment"
     subject.should be_recurring_payment

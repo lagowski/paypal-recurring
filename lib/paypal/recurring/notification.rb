@@ -21,7 +21,8 @@ module PayPal
         :seller_id        => :receiver_id,
         :email            => :receiver_email,
         :initial_amount   => :initial_payment_amount,
-        :payer_email      => :payer_email
+        :payer_email      => :payer_email,
+        :payer_id         => :payer_id
       })
 
       def initialize(params = {})
