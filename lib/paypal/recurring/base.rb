@@ -18,6 +18,7 @@ module PayPal
       attr_accessor :period
       attr_accessor :profile_id
       attr_accessor :reference
+      attr_accessor :busines
       attr_accessor :refund_type
       attr_accessor :return_url
       attr_accessor :start_at
@@ -69,6 +70,7 @@ module PayPal
           :item_category,
           :item_name,
           :item_amount,
+          :busines,
           :item_quantity
         ).merge(
           :payment_action => "Authorization",
