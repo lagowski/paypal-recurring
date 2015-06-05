@@ -18,7 +18,7 @@ module PayPal
       attr_accessor :period
       attr_accessor :profile_id
       attr_accessor :reference
-      attr_accessor :busines
+      attr_accessor :business
       attr_accessor :refund_type
       attr_accessor :return_url
       attr_accessor :start_at
