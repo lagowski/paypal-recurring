@@ -70,7 +70,7 @@ module PayPal
           :item_category,
           :item_name,
           :item_amount,
-          :busines,
+          :business,
           :item_quantity
         ).merge(
           :payment_action => "Authorization",
