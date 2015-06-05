@@ -63,6 +63,7 @@ module PayPal
           :return_url,
           :cancel_url,
           :currency,
+          :reference,
           :description,
           :ipn_url,
           :item_category,
