@@ -32,6 +32,21 @@ module PayPal
       attr_accessor :trial_length
       attr_accessor :trial_period
       attr_accessor :trial_amount
+      attr_accessor :upload
+      attr_accessor :no_shipping
+      attr_accessor :return
+      attr_accessor :notify_url
+      attr_accessor :item_name
+      attr_accessor :currency_code
+      attr_accessor :a3
+      attr_accessor :p3
+      attr_accessor :src
+      attr_accessor :t3
+      attr_accessor :sra
+      attr_accessor :a1
+      attr_accessor :p1
+      attr_accessor :t1
+      attr_accessor :custom
 
       def initialize(options = {})
         options.each {|name, value| send("#{name}=", value)}
@@ -71,7 +86,22 @@ module PayPal
           :item_name,
           :item_amount,
           :business,
-          :item_quantity
+          :item_quantity,
+          :upload,
+          :no_shipping,
+          :return,
+          :notify_url,
+          :item_name,
+          :currency_code,
+          :a3,
+          :p3,
+          :src,
+          :t3,
+          :sra,
+          :a1,
+          :p1,
+          :t1,
+          :custom
         ).merge(
           :payment_action => "Authorization",
           :no_shipping => 1,
